@@ -1,0 +1,14 @@
+{
+  "realm": "hello-world-authz",
+  "auth-server-url": "http://localhost:8081/auth/",
+  "ssl-required": "external",
+  "resource": "app-authz-vanilla",
+  "verify-token-audience": true,
+  "credentials": {
+    "secret": "1ff9c7bf-0b45-4c1c-8336-6cab9452da44"
+  },
+  "confidential-port": 0,
+  "policy-enforcer": {
+    "on-deny-redirect-to": "/app-authz-vanilla/error.jsp"
+  }
+}
